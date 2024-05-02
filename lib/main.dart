@@ -18,6 +18,7 @@ class MainApp extends StatelessWidget {
             elevation: 0,
             title: Text("Hello"),
           ),
+          body: Text('Help me'),
         ));
   }
 }
