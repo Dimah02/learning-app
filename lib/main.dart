@@ -1,24 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:learning_app/screens/home_page.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(LearningApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
+class LearningApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          appBar: AppBar(
-            centerTitle: true,
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            title: Text("Hello"),
-          ),
-          body: Text('Help me'),
-        ));
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
+      );
   }
 }
+
