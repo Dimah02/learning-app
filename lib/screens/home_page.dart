@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
         ),
         body: ListView(children: [
           const Padding(
-            padding: EdgeInsets.only(left: 32.0),
+            padding: EdgeInsets.only(left: 32.0, top: 16),
             child: Text("Random words",
                 style: TextStyle(
                   fontSize: 24,
@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
           ),
           Container(
             margin:
-                const EdgeInsets.only(left: 32, right: 32, top: 16, bottom: 16),
+                const EdgeInsets.only(left: 32, right: 32, top: 8, bottom: 16),
             height: 250,
             width: double.infinity,
             color: Colors.red,
@@ -41,14 +41,36 @@ class HomePage extends StatelessWidget {
           Row(
             children: [
               const Spacer(flex: 1),
-              ElevatedButton(onPressed: () {}, child: const Text("left")),
+              ElevatedButton(
+                onPressed: () {},
+                style: const ButtonStyle(
+                    elevation: MaterialStatePropertyAll(0),
+                    backgroundColor:
+                        MaterialStatePropertyAll(Colors.transparent)),
+                child: const Icon(
+                  Icons.arrow_back,
+                  color: Colors.black,
+                  size: 35,
+                ),
+              ),
               const Spacer(flex: 1),
-              ElevatedButton(onPressed: () {}, child: const Text("right")),
+              ElevatedButton(
+                onPressed: () {},
+                style: const ButtonStyle(
+                    elevation: MaterialStatePropertyAll(0),
+                    backgroundColor:
+                        MaterialStatePropertyAll(Colors.transparent)),
+                child: const Icon(
+                  Icons.arrow_forward,
+                  color: Colors.black,
+                  size: 35,
+                ),
+              ),
               const Spacer(flex: 1),
             ],
           ),
           const Padding(
-            padding: EdgeInsets.only(left: 32.0, top: 16, bottom: 16),
+            padding: EdgeInsets.only(left: 32.0, top: 16, bottom: 8),
             child: Text("Categories",
                 style: TextStyle(
                   fontSize: 24,
