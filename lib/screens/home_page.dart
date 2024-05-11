@@ -26,10 +26,12 @@ class HomePage extends StatelessWidget {
         body: ListView(children: [
           const Padding(
             padding: EdgeInsets.only(left: 32.0, top: 16),
-            child: Text("Random words",
-                style: TextStyle(
-                  fontSize: 24,
-                )),
+            child: Text(
+              "Random words",
+              style: TextStyle(
+                fontSize: 24,
+              ),
+            ),
           ),
           Container(
             margin:
@@ -81,7 +83,9 @@ class HomePage extends StatelessWidget {
             children: [
               Category(
                 color: const Color(0XFF8078BC),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/numbers');
+                },
                 text: "Numbers",
                 image: "assets/images/categories/numbers.png",
               ),
