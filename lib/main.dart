@@ -12,18 +12,20 @@ void main() {
     providers: [
       ChangeNotifierProvider(create: (context) => RandomModel()),
     ],
-    child: LearningApp(),
+    child: const LearningApp(),
   ));
 }
 
 class LearningApp extends StatelessWidget {
+  const LearningApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => HomePage(),
+        '/': (context) => const HomePage(),
         '/numbers': (context) => Numbers(),
         '/family': (context) => Family(),
         '/animals': (context) => Animals(),

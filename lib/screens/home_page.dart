@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:learning_app/components/category_item.dart';
 import 'package:learning_app/screens/hangman.dart';
 import 'package:learning_app/screens/home_body.dart';
 import 'package:learning_app/screens/quize.dart';
@@ -13,7 +12,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int currentIndex = 1;
-  List<Widget> screens = [Quize(), HomeBody(), Hangman()];
+  List<Widget> screens = [const Quize(), const HomeBody(), const Hangman()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +39,7 @@ class _HomePageState extends State<HomePage> {
             currentIndex = newVal;
           });
         },
-        selectedItemColor: Color(0XFFD82973),
+        selectedItemColor: const Color(0XFFD82973),
         unselectedItemColor: Colors.black45,
         items: const [
           BottomNavigationBarItem(

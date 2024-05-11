@@ -67,6 +67,7 @@ class Numbers extends StatelessWidget {
       ),
       body: ListView.builder(
         itemCount: _list.length,
+        // ignore: avoid_types_as_parameter_names
         itemBuilder: (context, num) {
           return Item(
             item: _list[num],
