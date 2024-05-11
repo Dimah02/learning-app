@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:learning_app/models/numbers_data.dart';
+import 'package:learning_app/screens/animals.dart';
+import 'package:learning_app/screens/colors.dart';
+import 'package:learning_app/screens/family.dart';
 import 'package:learning_app/screens/home_page.dart';
 import 'package:learning_app/screens/numbers.dart';
 import 'package:provider/provider.dart';
@@ -22,6 +25,9 @@ class LearningApp extends StatelessWidget {
       routes: {
         '/': (context) => HomePage(),
         '/numbers': (context) => Numbers(),
+        '/family': (context) => Family(),
+        '/animals': (context) => Animals(),
+        '/colors': (context) => ColorsPage(),
       },
     );
   }

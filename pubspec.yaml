@@ -66,6 +66,7 @@ flutter:
     - assets/images/logo/
     - assets/images/categories/
     - assets/images/family/
+    - assets/images/colors/
     - assets/images/numbers/
     - assets/sounds/animals/
     - assets/sounds/colors/
