@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
 import 'package:learning_app/models/item_data.dart';
 
 class Item extends StatelessWidget {

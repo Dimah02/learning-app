@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learning_app/components/category_item.dart';
+import 'package:learning_app/components/random_word.dart';
+import 'package:learning_app/models/item_data.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
@@ -18,12 +20,12 @@ class HomeBody extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            margin:
-                const EdgeInsets.only(left: 32, right: 32, top: 8, bottom: 16),
-            height: 250,
-            width: double.infinity,
-            color: Colors.red,
+          const RandomWord(
+            item: ItemDateModel(
+                image: 'assets/images/family/grandmother.png',
+                enName: 'Grandmother',
+                spName: 'La Aboela',
+                sound: ''),
           ),
           Row(
             children: [
