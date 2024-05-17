@@ -37,10 +37,12 @@ class _HangmanState extends State<Hangman> {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 "Score: ${Provider.of<HangManModel>(context).score}",
-                style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+                style:
+                    const TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
               ),
             ),
-            Container(
+            SizedBox(
+              width: double.infinity,
               child: Image(
                 image: AssetImage(Provider.of<HangManModel>(context).img),
               ),
@@ -84,7 +86,6 @@ class _HangmanState extends State<Hangman> {
 
   List<Widget> currentWord() {
     List<Widget> list = [];
-    bool ok = true;
     for (int i = 0; i < word!.length; i++) {
       int idx = word![i].toUpperCase().codeUnits[0];
       if (chosed![idx - 65] == 1) {
@@ -97,7 +98,6 @@ class _HangmanState extends State<Hangman> {
           "_",
           style: TextStyle(fontSize: 40),
         ));
-        ok = false;
       }
       list.add(const SizedBox(
         width: 8,
@@ -116,7 +116,7 @@ class _HangmanState extends State<Hangman> {
                   .enterdChar(letters[i]);
             },
             child: Container(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 alignment: Alignment.center,
                 width: 40,
                 decoration: BoxDecoration(
@@ -124,7 +124,7 @@ class _HangmanState extends State<Hangman> {
                     border: Border.all(color: Colors.green)),
                 child: Text(
                   letters[i],
-                  style: TextStyle(fontSize: 20),
+                  style: const TextStyle(fontSize: 20),
                 ))));
       } else if (chosed![i] == 2) {
         list.add(GestureDetector(
@@ -133,7 +133,7 @@ class _HangmanState extends State<Hangman> {
                   .enterdChar(letters[i]);
             },
             child: Container(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 alignment: Alignment.center,
                 width: 40,
                 decoration: BoxDecoration(
@@ -141,7 +141,7 @@ class _HangmanState extends State<Hangman> {
                     border: Border.all(color: Colors.red)),
                 child: Text(
                   letters[i],
-                  style: TextStyle(fontSize: 20),
+                  style: const TextStyle(fontSize: 20),
                 ))));
       } else {
         list.add(GestureDetector(
@@ -150,7 +150,7 @@ class _HangmanState extends State<Hangman> {
                   .enterdChar(letters[i]);
             },
             child: Container(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 alignment: Alignment.center,
                 width: 40,
                 decoration: BoxDecoration(
@@ -158,7 +158,7 @@ class _HangmanState extends State<Hangman> {
                     border: Border.all(color: Colors.black12)),
                 child: Text(
                   letters[i],
-                  style: TextStyle(fontSize: 20),
+                  style: const TextStyle(fontSize: 20),
                 ))));
       }
     }
