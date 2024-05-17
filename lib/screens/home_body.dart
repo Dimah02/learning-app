@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:learning_app/components/category_item.dart';
 import 'package:learning_app/components/random_word.dart';
 import 'package:learning_app/models/item_data.dart';
+import 'package:learning_app/models/random_data.dart';
+import 'package:provider/provider.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
@@ -20,38 +22,42 @@ class HomeBody extends StatelessWidget {
               ),
             ),
           ),
-          const RandomWord(
+          RandomWord(
             item: ItemDateModel(
-                image: 'assets/images/family/grandmother.png',
-                enName: 'Grandmother',
-                spName: 'La Aboela',
+                image: Provider.of<RandomModel>(context).item.image,
+                enName: Provider.of<RandomModel>(context).item.enName,
+                spName: Provider.of<RandomModel>(context).item.spName,
                 sound: ''),
           ),
           Row(
             children: [
               const Spacer(flex: 1),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Provider.of<RandomModel>(context, listen: false).goLeft();
+                },
                 style: const ButtonStyle(
                     elevation: MaterialStatePropertyAll(0),
                     backgroundColor:
                         MaterialStatePropertyAll(Colors.transparent)),
                 child: const Icon(
                   Icons.arrow_back,
-                  color: Colors.black,
+                  color: Color(0XFFD82973),
                   size: 35,
                 ),
               ),
               const Spacer(flex: 1),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Provider.of<RandomModel>(context, listen: false).goRight();
+                },
                 style: const ButtonStyle(
                     elevation: MaterialStatePropertyAll(0),
                     backgroundColor:
                         MaterialStatePropertyAll(Colors.transparent)),
                 child: const Icon(
                   Icons.arrow_forward,
-                  color: Colors.black,
+                  color: Color(0XFFD82973),
                   size: 35,
                 ),
               ),

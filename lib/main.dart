@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learning_app/models/numbers_data.dart';
+import 'package:learning_app/models/random_data.dart';
 import 'package:learning_app/screens/animals.dart';
 import 'package:learning_app/screens/colors.dart';
 import 'package:learning_app/screens/family.dart';

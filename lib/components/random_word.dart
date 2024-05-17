@@ -20,18 +20,23 @@ class RandomWord extends StatelessWidget {
             height: 16,
           ),
           // ignore: sized_box_for_whitespace
-          Container(width: 125, child: Image(image: AssetImage(item.image!))),
+          Container(width: 130, child: Image(image: AssetImage(item.image!))),
           const SizedBox(
             height: 32,
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
+              const SizedBox(
+                width: 20,
+              ),
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Text(
                   item.enName,
                   style: const TextStyle(
-                      fontSize: 20, fontWeight: FontWeight.bold),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1),
                 ),
                 const SizedBox(
                   height: 16,
@@ -39,11 +44,13 @@ class RandomWord extends StatelessWidget {
                 Text(
                   item.spName,
                   style: const TextStyle(
-                      fontSize: 20, fontWeight: FontWeight.bold),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1),
                 ),
               ]),
               const SizedBox(
-                width: 64,
+                width: 72,
               ),
               IconButton(
                 onPressed: () async {
@@ -53,9 +60,12 @@ class RandomWord extends StatelessWidget {
                 },
                 icon: const Icon(
                   Icons.play_arrow,
-                  size: 28,
+                  size: 40,
                   color: Color(0XFFD82973),
                 ),
+              ),
+              const SizedBox(
+                width: 16,
               ),
             ],
           ),
