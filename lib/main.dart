@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_app/models/hangman_data.dart';
 import 'package:learning_app/models/random_data.dart';
 import 'package:learning_app/screens/animals.dart';
 import 'package:learning_app/screens/colors.dart';
@@ -11,6 +12,7 @@ void main() {
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (context) => RandomModel()),
+      ChangeNotifierProvider(create: (context) => HangManModel()),
     ],
     child: const LearningApp(),
   ));

@@ -12,7 +12,7 @@ class _QuizeState extends State<Quize> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text("Quiez"),
+        child: Text("Quize"),
       ),
     );
   }
