@@ -24,10 +24,11 @@ class HomeBody extends StatelessWidget {
           ),
           RandomWord(
             item: ItemDateModel(
-                image: Provider.of<RandomModel>(context).item.image,
-                enName: Provider.of<RandomModel>(context).item.enName,
-                spName: Provider.of<RandomModel>(context).item.spName,
-                sound: ''),
+              image: Provider.of<RandomModel>(context).item.image,
+              enName: Provider.of<RandomModel>(context).item.enName,
+              spName: Provider.of<RandomModel>(context).item.spName,
+              sound: Provider.of<RandomModel>(context).item.sound,
+            ),
           ),
           Row(
             children: [

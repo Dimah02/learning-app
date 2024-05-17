@@ -9,32 +9,32 @@ class Animals extends StatelessWidget {
         image: 'assets/images/animals/bird.png',
         enName: 'Bird',
         spName: 'Pajaro',
-        sound: ''),
+        sound: 'sounds/animals/bird.mp3'),
     const ItemDateModel(
         image: 'assets/images/animals/cat.png',
         enName: 'Cat',
         spName: 'Gato',
-        sound: ''),
+        sound: 'sounds/animals/cat.mp3'),
     const ItemDateModel(
         image: 'assets/images/animals/cow.png',
         enName: 'Cow',
         spName: 'Vaca',
-        sound: ''),
+        sound: 'sounds/animals/cow.mp3'),
     const ItemDateModel(
         image: 'assets/images/animals/dog.png',
         enName: 'Dog',
         spName: 'Perro',
-        sound: ''),
+        sound: 'sounds/animals/dog.mp3'),
     const ItemDateModel(
         image: 'assets/images/animals/fish.png',
         enName: 'Fish',
         spName: 'Pez',
-        sound: ''),
+        sound: 'sounds/animals/fish.mp3'),
     const ItemDateModel(
         image: 'assets/images/animals/snack.png',
         enName: 'Snack',
         spName: 'Serpiente',
-        sound: ''),
+        sound: 'sounds/animals/snack.mp3'),
   ];
   @override
   Widget build(BuildContext context) {

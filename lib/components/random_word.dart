@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:learning_app/models/item_data.dart';
 
@@ -54,9 +55,9 @@ class RandomWord extends StatelessWidget {
               ),
               IconButton(
                 onPressed: () async {
-                  // final player = AudioPlayer();
-                  // await player.setSourceAsset(item.sound);
-                  // await player.resume();
+                  final player = AudioPlayer();
+                  await player.setSourceAsset(item.sound);
+                  await player.resume();
                 },
                 icon: const Icon(
                   Icons.play_arrow,

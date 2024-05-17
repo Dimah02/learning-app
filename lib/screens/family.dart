@@ -9,32 +9,32 @@ class Family extends StatelessWidget {
         image: 'assets/images/family/father.png',
         enName: 'Father',
         spName: 'El Padre',
-        sound: ''),
+        sound: 'sounds/family/father.mp3'),
     const ItemDateModel(
         image: 'assets/images/family/mother.png',
         enName: 'Mother',
         spName: 'La Madre',
-        sound: ''),
+        sound: 'sounds/family/mother.mp3'),
     const ItemDateModel(
         image: 'assets/images/family/brother.png',
         enName: 'Brother',
         spName: 'El Hermano',
-        sound: ''),
+        sound: 'sounds/family/brother.mp3'),
     const ItemDateModel(
         image: 'assets/images/family/sister.png',
         enName: 'Sister',
         spName: 'La Hermana',
-        sound: ''),
+        sound: 'sounds/family/sister.mp3'),
     const ItemDateModel(
         image: 'assets/images/family/grandfather.png',
         enName: 'Grandfather',
         spName: 'El Abuelo',
-        sound: ''),
+        sound: 'sounds/family/grandfather.mp3'),
     const ItemDateModel(
         image: 'assets/images/family/grandmother.png',
         enName: 'Grandmother',
         spName: 'La Aboela',
-        sound: ''),
+        sound: 'sounds/family/grandmother.mp3'),
   ];
   @override
   Widget build(BuildContext context) {

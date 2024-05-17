@@ -9,37 +9,37 @@ class ColorsPage extends StatelessWidget {
         image: 'assets/images/colors/blue.png',
         enName: 'Blue',
         spName: 'Azul',
-        sound: ''),
+        sound: 'sounds/colors/blue.mp3'),
     const ItemDateModel(
         image: 'assets/images/colors/green.png',
         enName: 'Green',
         spName: 'Verde',
-        sound: ''),
+        sound: 'sounds/colors/green.mp3'),
     const ItemDateModel(
         image: 'assets/images/colors/yellow.png',
         enName: 'Yellow',
         spName: 'Amarillo',
-        sound: ''),
+        sound: 'sounds/colors/yellow.mp3'),
     const ItemDateModel(
         image: 'assets/images/colors/red.png',
         enName: 'Red',
         spName: 'Rojo',
-        sound: ''),
+        sound: 'sounds/colors/red.mp3'),
     const ItemDateModel(
         image: 'assets/images/colors/purple.png',
         enName: 'Purple',
         spName: 'Morado',
-        sound: ''),
+        sound: 'sounds/colors/purple.mp3'),
     const ItemDateModel(
         image: 'assets/images/colors/black.png',
         enName: 'Black',
         spName: 'Negro',
-        sound: ''),
+        sound: 'sounds/colors/black.mp3'),
     const ItemDateModel(
         image: 'assets/images/colors/orange.png',
         enName: 'Orange',
         spName: 'Naranja',
-        sound: ''),
+        sound: 'sounds/colors/orange.mp3'),
   ];
   @override
   Widget build(BuildContext context) {

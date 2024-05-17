@@ -7,42 +7,42 @@ class RandomModel extends ChangeNotifier {
         image: 'assets/images/animals/cat.png',
         enName: 'Cat',
         spName: 'Gato',
-        sound: ''),
+        sound: 'sounds/animals/cat.mp3'),
     const ItemDateModel(
         image: 'assets/images/numbers/one.png',
         enName: 'One',
         spName: 'Uno',
-        sound: ''),
+        sound: 'sounds/numbers/one.mp3'),
     const ItemDateModel(
         image: 'assets/images/family/sister.png',
         enName: 'Sister',
         spName: 'La Hermana',
-        sound: ''),
+        sound: 'sounds/family/sister.mp3'),
     const ItemDateModel(
         image: 'assets/images/colors/purple.png',
         enName: 'Purple',
         spName: 'Morado',
-        sound: ''),
+        sound: 'sounds/colors/purple.mp3'),
     const ItemDateModel(
         image: 'assets/images/numbers/ten.png',
         enName: 'Ten',
         spName: 'Diez',
-        sound: ''),
+        sound: 'sounds/numbers/ten.mp3'),
     const ItemDateModel(
         image: 'assets/images/animals/dog.png',
         enName: 'Dog',
         spName: 'Perro',
-        sound: ''),
+        sound: 'sounds/animals/dog.mp3'),
     const ItemDateModel(
         image: 'assets/images/family/father.png',
         enName: 'Father',
         spName: 'El Padre',
-        sound: ''),
+        sound: 'sounds/family/father.mp3'),
     const ItemDateModel(
         image: 'assets/images/colors/blue.png',
         enName: 'Blue',
         spName: 'Azul',
-        sound: ''),
+        sound: 'sounds/colors/blue.mp3'),
   ];
   int index = 0;
   ItemDateModel get item => _list[index];

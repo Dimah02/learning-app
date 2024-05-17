@@ -9,52 +9,52 @@ class Numbers extends StatelessWidget {
         image: 'assets/images/numbers/one.png',
         enName: 'One',
         spName: 'Uno',
-        sound: ''),
+        sound: 'sounds/numbers/one.mp3'),
     const ItemDateModel(
         image: 'assets/images/numbers/two.png',
         enName: 'Two',
         spName: 'Dos',
-        sound: ''),
+        sound: 'sounds/numbers/two.mp3'),
     const ItemDateModel(
         image: 'assets/images/numbers/three.png',
         enName: 'Three',
         spName: 'Tres',
-        sound: ''),
+        sound: 'sounds/numbers/three.mp3'),
     const ItemDateModel(
         image: 'assets/images/numbers/four.png',
         enName: 'Four',
         spName: 'Cuatro',
-        sound: ''),
+        sound: 'sounds/numbers/four.mp3'),
     const ItemDateModel(
         image: 'assets/images/numbers/five.png',
         enName: 'Five',
         spName: 'Cinco',
-        sound: ''),
+        sound: 'sounds/numbers/five.mp3'),
     const ItemDateModel(
         image: 'assets/images/numbers/six.png',
         enName: 'Six',
         spName: 'Seis',
-        sound: ''),
+        sound: 'sounds/numbers/six.mp3'),
     const ItemDateModel(
         image: 'assets/images/numbers/seven.png',
         enName: 'Seven',
         spName: 'Siete',
-        sound: ''),
+        sound: 'sounds/numbers/seven.mp3'),
     const ItemDateModel(
         image: 'assets/images/numbers/eight.png',
         enName: 'Eight',
         spName: 'Ocho',
-        sound: ''),
+        sound: 'sounds/numbers/eight.mp3'),
     const ItemDateModel(
         image: 'assets/images/numbers/nine.png',
         enName: 'Nine',
         spName: 'Nueve',
-        sound: ''),
+        sound: 'sounds/numbers/nine.mp3'),
     const ItemDateModel(
         image: 'assets/images/numbers/ten.png',
         enName: 'Ten',
         spName: 'Diez',
-        sound: ''),
+        sound: 'sounds/numbers/ten.mp3'),
   ];
   @override
   Widget build(BuildContext context) {
