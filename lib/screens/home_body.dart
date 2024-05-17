@@ -29,6 +29,7 @@ class HomeBody extends StatelessWidget {
               spName: Provider.of<RandomModel>(context).item.spName,
               sound: Provider.of<RandomModel>(context).item.sound,
             ),
+            color: Provider.of<RandomModel>(context).randomColor,
           ),
           Row(
             children: [
@@ -64,6 +65,14 @@ class HomeBody extends StatelessWidget {
               ),
               const Spacer(flex: 1),
             ],
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          const Divider(
+            endIndent: 32,
+            indent: 32,
+            color: Colors.black12,
           ),
           const Padding(
             padding: EdgeInsets.only(left: 32.0, top: 16, bottom: 8),
@@ -122,6 +131,9 @@ class HomeBody extends StatelessWidget {
                 image: "assets/images/categories/animals.png",
               ),
             ],
+          ),
+          const SizedBox(
+            height: 16,
           ),
         ],
       ),

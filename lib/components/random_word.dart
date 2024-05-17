@@ -3,13 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:learning_app/models/item_data.dart';
 
 class RandomWord extends StatelessWidget {
-  const RandomWord({super.key, required this.item});
+  const RandomWord({super.key, required this.item, required this.color});
   final ItemDateModel item;
+  final Color color;
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: const Color.fromARGB(68, 249, 146, 189),
+          color: color,
           border: Border.all(color: const Color(0XFFD82973)),
           borderRadius: const BorderRadius.all(Radius.circular(64))),
       margin: const EdgeInsets.only(left: 32, right: 32, top: 8, bottom: 16),
@@ -26,11 +27,8 @@ class RandomWord extends StatelessWidget {
             height: 32,
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(
-                width: 20,
-              ),
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Text(
                   item.enName,
@@ -64,9 +62,6 @@ class RandomWord extends StatelessWidget {
                   size: 40,
                   color: Color(0XFFD82973),
                 ),
-              ),
-              const SizedBox(
-                width: 16,
               ),
             ],
           ),

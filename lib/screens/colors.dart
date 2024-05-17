@@ -45,6 +45,8 @@ class ColorsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
+        backgroundColor: const Color(0XFF86F1A7),
         title: const Text(
           "Colors",
           style: TextStyle(fontWeight: FontWeight.bold),

@@ -17,6 +17,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: const Color.fromARGB(132, 220, 173, 249),
+        elevation: 0,
         title: const Row(crossAxisAlignment: CrossAxisAlignment.end, children: [
           Image(
             image: AssetImage("assets/images/logo/puzzle.png"),
@@ -39,6 +41,8 @@ class _HomePageState extends State<HomePage> {
             currentIndex = newVal;
           });
         },
+        backgroundColor: const Color.fromARGB(132, 220, 173, 249),
+        elevation: 0,
         selectedItemColor: const Color(0XFFD82973),
         unselectedItemColor: Colors.black45,
         items: const [

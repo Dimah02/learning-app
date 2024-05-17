@@ -40,6 +40,8 @@ class Family extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
+        backgroundColor: const Color(0XFFF4DD45),
         title: const Text(
           "Family",
           style: TextStyle(fontWeight: FontWeight.bold),

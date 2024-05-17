@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:learning_app/models/item_data.dart';
 
@@ -44,18 +46,30 @@ class RandomModel extends ChangeNotifier {
         spName: 'Azul',
         sound: 'sounds/colors/blue.mp3'),
   ];
-  int index = 0;
-  ItemDateModel get item => _list[index];
+  int _index = 0;
+  final List<Color> _colors = [
+    const Color.fromARGB(68, 249, 146, 189),
+    const Color.fromARGB(68, 146, 249, 233),
+    const Color.fromARGB(68, 216, 249, 146),
+    const Color.fromARGB(68, 146, 185, 249),
+  ];
+  ItemDateModel get item => _list[_index];
+
+  Color get randomColor {
+    Random random = Random();
+    int randomNumber = random.nextInt(10);
+    return _colors[randomNumber % _colors.length];
+  }
 
   void goRight() {
-    index++;
-    index %= _list.length;
+    _index++;
+    _index %= _list.length;
     notifyListeners();
   }
 
   void goLeft() {
-    index--;
-    if (index < 0) index = _list.length - 1;
+    _index--;
+    if (_index < 0) _index = _list.length - 1;
     notifyListeners();
   }
 }
