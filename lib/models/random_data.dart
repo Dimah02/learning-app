@@ -48,10 +48,10 @@ class RandomModel extends ChangeNotifier {
   ];
   int _index = 0;
   final List<Color> _colors = [
-    const Color.fromARGB(68, 249, 146, 189),
-    const Color.fromARGB(68, 146, 249, 233),
-    const Color.fromARGB(68, 216, 249, 146),
-    const Color.fromARGB(68, 146, 185, 249),
+    const Color.fromARGB(68, 248, 159, 196),
+    const Color.fromARGB(68, 174, 251, 239),
+    const Color.fromARGB(68, 255, 255, 159),
+    const Color.fromARGB(68, 146, 186, 250),
   ];
   ItemDateModel get item => _list[_index];
 
