@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'package:learning_app/models/question.dart';
+import 'package:learning_app/models/question_data.dart';
+import 'package:provider/provider.dart';
  
 class QuizScreen extends StatefulWidget {
   @override
@@ -11,7 +13,8 @@ class _QuizScreenState extends State<QuizScreen> {
   int score = 0;
 
   void checkAnswer(int selectedIndex) {
-    if (selectedIndex == Question.questions[currentQuestionIndex].answerIndex) {
+    print(selectedIndex);
+    if (selectedIndex == Provider.of<QuestionModel>(context).questions[currentQuestionIndex].answerIndex) {
       score++;
     }
     setState(() {
@@ -21,10 +24,10 @@ class _QuizScreenState extends State<QuizScreen> {
 
   @override
   Widget build(BuildContext context) {
-    if (currentQuestionIndex >= questions.length) {
-      return ResultScreen(score, questions.length); // Display results screen
+    if (currentQuestionIndex >= Provider.of<QuestionModel>(context).questions.length) {
+      return ResultScreen(score, Provider.of<QuestionModel>(context).questions.length); // Display results screen
     } else {
-      Question question = questions[currentQuestionIndex];
+      Question question = Provider.of<QuestionModel>(context).questions[currentQuestionIndex];
       return Scaffold(
         appBar: AppBar(
           title: Text('Quiz App'),
@@ -33,13 +36,13 @@ class _QuizScreenState extends State<QuizScreen> {
           padding: EdgeInsets.all(20.0),
           child: Column(
             children: [
-              Image.asset(question.image),
-              Text(question.questionText, style: TextStyle(fontSize: 20.0)),
+              // Image.asset(question.image),
+              Text(Provider.of<QuestionModel>(context).questions[currentQuestionIndex].question, style: TextStyle(fontSize: 20.0)),
               SizedBox(height: 10.0),
-              ...List.generate(question.options.length, (index) {
+              ...List.generate(Provider.of<QuestionModel>(context).questions[currentQuestionIndex].options.length, (index) {
                 return ElevatedButton(
                   onPressed: () => checkAnswer(index),
-                  child: Text(question.options[index]),
+                  child: Text(Provider.of<QuestionModel>(context).questions[currentQuestionIndex].options[index]),
                 );
               }),
             ],

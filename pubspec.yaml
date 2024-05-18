@@ -72,6 +72,7 @@ flutter:
     - assets/sounds/colors/
     - assets/sounds/family/
     - assets/sounds/numbers/
+    - assets/images/hangman/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -12,7 +12,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int currentIndex = 1;
-  List<Widget> screens = [const Quize(), const HomeBody(), const Hangman()];
+  List<Widget> screens = [QuizScreen(), const HomeBody(), const Hangman()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
