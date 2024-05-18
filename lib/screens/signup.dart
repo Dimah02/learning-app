@@ -110,7 +110,6 @@ class _SignUpState extends State<SignUp> {
         .createUserWithEmailAndPassword(
             email: _emailController.text, password: _passwordController.text)
         .whenComplete(() {
-      print("user created successfully");
       Navigator.pushNamed(context, '/');
     });
   }
