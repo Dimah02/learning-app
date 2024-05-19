@@ -64,17 +64,39 @@ class _SignUpState extends State<SignUp> {
                 controller: _passwordController,
               ),
               const SizedBox(height: 32),
-              ElevatedButton(
-                style: const ButtonStyle(
-                    minimumSize: MaterialStatePropertyAll(Size(150, 65)),
-                    elevation: MaterialStatePropertyAll(0),
-                    backgroundColor:
-                        MaterialStatePropertyAll(Color(0xFFD80A61))),
-                onPressed: _signUp,
-                child: const Text(
-                  "SignUp",
-                  style: TextStyle(fontSize: 24, color: Colors.white),
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    style: const ButtonStyle(
+                        minimumSize: MaterialStatePropertyAll(Size(150, 65)),
+                        elevation: MaterialStatePropertyAll(0),
+                        backgroundColor:
+                            MaterialStatePropertyAll(Color(0xFFD80A61))),
+                    onPressed: _signUp,
+                    child: const Text(
+                      "SignUp",
+                      style: TextStyle(fontSize: 24, color: Colors.white),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 16,
+                  ),
+                  ElevatedButton(
+                    style: const ButtonStyle(
+                        minimumSize: MaterialStatePropertyAll(Size(150, 65)),
+                        elevation: MaterialStatePropertyAll(0),
+                        backgroundColor: MaterialStatePropertyAll(
+                            Color.fromARGB(255, 250, 203, 223))),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/');
+                    },
+                    child: const Text(
+                      "SignIn",
+                      style: TextStyle(fontSize: 24, color: Color(0xFFD80A61)),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

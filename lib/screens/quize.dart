@@ -47,10 +47,13 @@ class _QuizScreenState extends State<QuizScreen> {
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: ListView(
+            // mainAxisAlignment: MainAxisAlignment.center,
+            // crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              const SizedBox(
+                height: 32,
+              ),
               Text(
                 "Score: ${Provider.of<QuestionModel>(context).score}/${Provider.of<QuestionModel>(context).totalQ}",
                 style: const TextStyle(fontSize: 32),

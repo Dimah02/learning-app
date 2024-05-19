@@ -126,11 +126,15 @@ class _LoginState extends State<Login> {
   }
 
   void _handelSignIn() {
-    Auth()
-        .singInWithEmailAndPassword(
-            email: _emailController.text, password: _passwordController.text)
-        .whenComplete(() {
-      Navigator.pushNamed(context, '/home');
-    });
+    try {
+      Auth()
+          .singInWithEmailAndPassword(
+              email: _emailController.text, password: _passwordController.text)
+          .whenComplete(() {
+        Navigator.pushNamed(context, '/home');
+      });
+    } catch (err) {
+      print(err);
+    }
   }
 }

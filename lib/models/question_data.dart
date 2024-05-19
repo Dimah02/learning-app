@@ -36,7 +36,7 @@ class QuestionModel extends ChangeNotifier {
   int get totalQ => _questions.length;
   void checkAns(int ans) {
     if (_indx == _questions.length) {
-      _indx = 0;
+      _indx = -1;
       _score = 0;
     } else if (_questions[_indx].answerIndex == ans) {
       _score++;

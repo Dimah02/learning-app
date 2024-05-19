@@ -29,10 +29,13 @@ class _HangmanState extends State<Hangman> {
     initState();
     return Scaffold(
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: ListView(
+          // mainAxisAlignment: MainAxisAlignment.center,
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            const SizedBox(
+              height: 32,
+            ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
