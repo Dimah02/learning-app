@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learning_app/screens/hangman.dart';
 import 'package:learning_app/screens/home_body.dart';
-import 'package:learning_app/screens/quize.dart';
+import 'package:learning_app/screens/quiz.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.sticky_note_2),
-            label: "Quize",
+            label: "Quiz",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home),

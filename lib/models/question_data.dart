@@ -14,7 +14,7 @@ class QuestionModel extends ChangeNotifier {
         3,
         'assets/images/family/grandmother.png'),
     Question(
-        "How do we say pink in Spanish?",
+        "How do we say purple in Spanish?",
         ["Azul", "Roja", "Amarilla", "Morado"],
         4,
         'assets/images/colors/purple.png'),
