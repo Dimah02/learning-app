@@ -20,6 +20,7 @@ class _HomeViewState extends State<HomeView> {
     'Data Scince'
   ];
   String dropdownValue = "Computer Scince";
+  String _selectedItem = 'Item 1';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -163,7 +164,20 @@ class _HomeViewState extends State<HomeView> {
               ScaffoldMessenger.of(context).showSnackBar(snackBar);
             },
             child: const Text("Press"),
-          )
+          ),
+          DropdownButtonFormField<String>(
+            value: _selectedItem,
+            items: const [
+              DropdownMenuItem(child: Text('Item 1'), value: 'Item 1'),
+              DropdownMenuItem(child: Text('Item 2'), value: 'Item 2'),
+            ],
+            onChanged: (value) {
+              setState(() {
+                _selectedItem = value!;
+              });
+            },
+            decoration: const InputDecoration(labelText: 'Select Item'),
+          ),
         ],
       ),
     );
